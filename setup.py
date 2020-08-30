@@ -27,12 +27,14 @@ def load_requirements(path_dir=PATH_ROOT, comment_char='#'):
 # the goal of the project is simplicity for researchers, don't want to add too much
 # engineer specific practices
 setup(
-    name='pytorch-lightning-conference-seed',
+    # TODO: edit your project name, this name appears in PyPI
+    name='pl-conference-seed',
     version=research_mnist.__version__,
     description=research_mnist.__docs__,
     author=research_mnist.__author__,
     author_email=research_mnist.__author_email__,
     url=research_mnist.__homepage__,
+    # TODO: update optional download seed
     download_url='https://github.com/PyTorchLightning/pytorch-lightning-conference-seed',
     license=research_mnist.__license__,
     packages=find_packages(exclude=['tests', 'docs']),
@@ -47,6 +49,7 @@ setup(
     setup_requires=[],
     install_requires=load_requirements(PATH_ROOT),
 
+    # TODO: edit optional project links
     project_urls={
         "Bug Tracker": "https://github.com/PyTorchLightning/pytorch-lightning-conference-seed/issues",
         "Documentation": "https://pt-lightning-seed.rtfd.io/en/latest/",
